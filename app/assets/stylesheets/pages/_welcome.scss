@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
-.logo {
+.static-logo {
   height: 100vh;
+  border: dashed red;
+}
+
+.animated {
+  height: 100vh;
+  border: thick double black;
 }
