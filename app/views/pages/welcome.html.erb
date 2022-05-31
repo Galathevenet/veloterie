@@ -1,0 +1,12 @@
+<div class="welcome">
+  <%= link_to association_path do %>
+    <%= image_tag("logo_couleur", class: "logo") %>
+  <% end %>
+</div>
+
+<div class="col pt-1" data-controller="disable-button">
+  <button class="btn btn-primary btn-lg" data-action="click->disable-button#disable" data-disable-button-target="button">
+    Click me!
+  </button>
+  <a href="#" class="d-none ms-2" data-disable-button-target="link" data-action="click->disable-button#reset">Reset</a>
+</div>
