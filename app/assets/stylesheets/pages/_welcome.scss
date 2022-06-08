@@ -6,10 +6,11 @@
 .static-logo {
   height: 100vh;
   border: dashed red;
+  transition: transform 3s ease-in;
 
   &:hover {
-      animation: shake 0.5s;
-      animation-iteration-count: 2;
+      animation: shake 0.2s;
+      animation-iteration-count: 1;
     }
 
     @keyframes shake {

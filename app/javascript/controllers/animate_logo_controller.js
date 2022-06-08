@@ -19,19 +19,12 @@ export default class extends Controller {
     console.log(event);
   }
 
-  // border(){
-  //   this.logoTarget.classList.replace("static-logo", "animated")
-  // }
-
-  rotate(){
+  animation(){
     console.log("rotatiiiing");
-    // this.linkTarget.preventDefault();
-    this.logoTarget.classList.replace("static-logo", "animated");
+    var current_rotation = 0;
+    current_rotation += 360;
+    this.logoTarget.style.transform = `rotate(${current_rotation}deg)`;
   }
 
 
 }
-
-  // preventDefault(event){
-  //   event.preventDefault();
-  // }

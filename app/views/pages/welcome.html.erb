@@ -1,15 +1,5 @@
 <div class="welcome" data-controller="animate-logo">
-  <%= link_to association_path, class:"wiggle", data: { :'animate-logo-target' => 'link', action: "click->animate-logo#rotate" } do %>
-    <%= image_tag("logo_couleur", class: "static-logo", data: { :'animate-logo-target' => "logo", action: "click->animate-logo#rotate" }) %>
+  <%= link_to association_path, class:"wiggle", data: { :'animate-logo-target' => 'link', action: "click->animate-logo#animation" } do %>
+    <%= image_tag("logo_couleur", class: "static-logo", data: { :'animate-logo-target' => "logo", action: "click->animate-logo#animation" }) %>
   <% end %>
 </div>
-<%# <div class="welcome" data-controller="animate-logo">
-    <%= image_tag "logo_couleur.png", class: "static-logo", data: { :'animate-logo-target' => "logo", action: "mouseover->animate-logo#border" } %>
-</div> %>
-
-<%# <div class="col pt-1" data-controller="disable-button">
-  <button class="btn btn-primary btn-lg" data-action="click->disable-button#disable" data-disable-button-target="button">
-    Click me!
-  </button>
-  <a href="#" class="d-none ms-2" data-disable-button-target="link" data-action="click->disable-button#reset">Reset</a>
-</div> %>
