@@ -6,22 +6,32 @@ export default class extends Controller {
 
   connect() {
     console.log("Hello from our first Stimulus controller")
+    this.clickListener = this.confirm.bind(this);
+    this.element.addEventListener('click', this.clickListener);
+
+  }
+  disconnect() {
+    this.element.removeEventListener('click', this.clickListener);
   }
 
-  border(){
-    this.logoTarget.classList.replace("static-logo", "animated")
+  confirm(event) {
+    event.preventDefault();
+    console.log(event);
   }
+
+  // border(){
+  //   this.logoTarget.classList.replace("static-logo", "animated")
+  // }
 
   rotate(){
-    console.log("preventDefault is working !")
-    preventDefault(e);{
-      e.preventDefault();
-    }
-    this.linkTarget.preventDefault();
+    console.log("rotatiiiing");
+    // this.linkTarget.preventDefault();
+    this.logoTarget.classList.replace("static-logo", "animated");
   }
 
-  preventDefault(event){
-    event.preventDefault()
-  }
 
 }
+
+  // preventDefault(event){
+  //   event.preventDefault();
+  // }

@@ -1,11 +1,11 @@
 <div class="welcome" data-controller="animate-logo">
-  <%= link_to association_path, data: { :'animate-logo-target' => 'link', action: "click->animate-logo#rotate" } do %>
-    <%= image_tag("logo_couleur", class: "static-logo") %>
+  <%= link_to association_path, class:"wiggle", data: { :'animate-logo-target' => 'link', action: "click->animate-logo#rotate" } do %>
+    <%= image_tag("logo_couleur", class: "static-logo", data: { :'animate-logo-target' => "logo", action: "click->animate-logo#rotate" }) %>
   <% end %>
 </div>
-<div class="welcome" data-controller="animate-logo">
+<%# <div class="welcome" data-controller="animate-logo">
     <%= image_tag "logo_couleur.png", class: "static-logo", data: { :'animate-logo-target' => "logo", action: "mouseover->animate-logo#border" } %>
-</div>
+</div> %>
 
 <%# <div class="col pt-1" data-controller="disable-button">
   <button class="btn btn-primary btn-lg" data-action="click->disable-button#disable" data-disable-button-target="button">
