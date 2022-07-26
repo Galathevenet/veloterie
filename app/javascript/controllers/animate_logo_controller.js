@@ -23,7 +23,10 @@ export default class extends Controller {
     console.log("rotatiiiing");
     var current_rotation = 0;
     current_rotation += 360;
-    this.logoTarget.style.transform = `rotate(${current_rotation}deg)`;
+    const bell = new Audio("http://bridgewater-brunel.me.uk/downloads/raw/simutrans/Pak128.Britain-Ex/sound/magedu-bicycle-bell.wav");
+    bell.play();
+    this.logoTarget.style.transform = `rotate(${current_rotation}deg) scale(2)`;
+    setTimeout(function () { window.location = "association"; }, 3000);
   }
 
 
