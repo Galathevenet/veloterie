@@ -12,8 +12,17 @@
   padding: 16px 8px;
   height: 400px;
 
+
+
   img {
     margin-right: 12px;
     border-radius: 4px;
+    transition: 0.3 ease-in-out;
+    transform: scale(1);
+
+      &:hover {
+          transform: scale(1.03);
+          transition: 0.3 ease-in-out;
+        }
   }
 }
