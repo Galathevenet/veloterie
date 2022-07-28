@@ -10,7 +10,7 @@
     <p>-------------------------------------------------------------------------
     -------------------------------------------------------------------------------</p>
   </div>
-  <div class="presentation-card">
+  <div class="presentation-card" data-aos="fade-up-right" data-aos-duration="500">
     <div class="card-title">
       <%= image_tag "outils_cercle.png", class: "card-img-round" %>
       <h2>L'Association</h2>
@@ -28,7 +28,7 @@
   </div>
 
   <div class="card-right">
-    <div class="presentation-card">
+    <div class="presentation-card" data-aos="fade-up-left" data-aos-duration="500">
       <div class="card-title">
         <%= image_tag "outils_cercle.png", class: "card-img-round" %>
         <h2>Nos activités</h2>
@@ -46,7 +46,7 @@
     <%= image_tag "photos/serre-boulon.jpg"%>
   </div>
 
-  <div class="presentation-card">
+  <div class="presentation-card" data-aos="fade-up-right" data-aos-duration="500">
     <div class="card-title">
       <%= image_tag "outils_cercle.png", class: "card-img-round" %>
       <h2>Nos valeurs</h2>
@@ -64,7 +64,7 @@
   </div>
 
   <div class="card-right">
-    <div class="presentation-card">
+    <div class="presentation-card" data-aos="fade-up-left" data-aos-duration="500">
       <div class="card-title">
         <%= image_tag "outils_cercle.png", class: "card-img-round" %>
         <h2>Nous rejoindre et nous suivre</h2>
@@ -76,3 +76,8 @@
     </div>
   </div>
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
