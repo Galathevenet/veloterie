@@ -5,7 +5,6 @@
 
 .static-logo {
   height: 100vh;
-  border: dashed red;
   transition: transform 3s ease-in;
 
   &:hover {
@@ -20,15 +19,4 @@
       80% { transform: translate(-1px, -1px) rotate(1deg); }
       100% {transform: translate(1px, -2px) rotate(-1deg); }
     }
-}
-
-.wiggle{
-
-
-}
-
-
-.animated {
-  height: 100vh;
-  border: thick double black;
 }

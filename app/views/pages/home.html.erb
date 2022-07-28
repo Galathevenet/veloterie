@@ -1,11 +1,78 @@
-<div class="full_logo">
-  <%= image_tag "logo_sans_outils.PNG", :class => "background" %>
-  <%= image_tag ("Tool1"), :class => "tool" %>
-  <%= image_tag ("Tool2"), :class => "tool" %>
-  <%= image_tag ("Tool3"), :class => "tool" %>
-  <%= image_tag ("Tool4"), :class => "tool" %>
-  <%= image_tag ("Tool5"), :class => "tool" %>
-  <%= image_tag ("Tool6"), :class => "tool" %>
-  <%= image_tag ("Tool7"), :class => "tool" %>
-  <%= image_tag ("Tool8"), :class => "tool" %>
+<div class="navbar">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "logo_trans.png" %>
+  <% end %>
+  <h1 class="nav-title">La Véloterie du Grand Cahors</h1>
+  <%= link_to "Contact", "#", class: "nav-link" %>
+</div>
+<div class="container">
+  <div class="velo-navigation">
+    <p>-------------------------------------------------------------------------
+    -------------------------------------------------------------------------------</p>
+  </div>
+  <div class="presentation-card">
+    <div class="card-title">
+      <%= image_tag "outils_cercle.png", class: "card-img-round" %>
+      <h2>L'Association</h2>
+    </div>
+    <div class="card-description">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas cum earum quis autem odio voluptate nisi. Nisi odit, quos inventore eveniet tenetur blanditiis, possimus dolores perspiciatis error quis quia?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta quidem tempora quis explicabo eos eum, corrupti perspiciatis est esse suscipit aspernatur facilis voluptatibus id, doloribus autem optio aut cumque.</p>
+    </div>
+  </div>
+
+  <div class="photos-container">
+    <%= image_tag "photos/mains-velo.jpg"%>
+    <%= image_tag "photos/outillage.jpg"%>
+    <%= image_tag "photos/serre-boulon.jpg"%>
+  </div>
+
+  <div class="card-right">
+    <div class="presentation-card">
+      <div class="card-title">
+        <%= image_tag "outils_cercle.png", class: "card-img-round" %>
+        <h2>Nos activités</h2>
+      </div>
+      <div class="card-description">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas cum earum quis autem odio voluptate nisi. Nisi odit, quos inventore eveniet tenetur blanditiis, possimus dolores perspiciatis error quis quia?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta quidem tempora quis explicabo eos eum, corrupti perspiciatis est esse suscipit aspernatur facilis voluptatibus id, doloribus autem optio aut cumque.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="photos-container">
+    <%= image_tag "photos/mains-velo.jpg"%>
+    <%= image_tag "photos/outillage.jpg"%>
+    <%= image_tag "photos/serre-boulon.jpg"%>
+  </div>
+
+  <div class="presentation-card">
+    <div class="card-title">
+      <%= image_tag "outils_cercle.png", class: "card-img-round" %>
+      <h2>Nos valeurs</h2>
+    </div>
+    <div class="card-description">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas cum earum quis autem odio voluptate nisi. Nisi odit, quos inventore eveniet tenetur blanditiis, possimus dolores perspiciatis error quis quia?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta quidem tempora quis explicabo eos eum, corrupti perspiciatis est esse suscipit aspernatur facilis voluptatibus id, doloribus autem optio aut cumque.</p>
+    </div>
+  </div>
+
+  <div class="photos-container">
+    <%= image_tag "photos/mains-velo.jpg"%>
+    <%= image_tag "photos/outillage.jpg"%>
+    <%= image_tag "photos/serre-boulon.jpg"%>
+  </div>
+
+  <div class="card-right">
+    <div class="presentation-card">
+      <div class="card-title">
+        <%= image_tag "outils_cercle.png", class: "card-img-round" %>
+        <h2>Nous rejoindre et nous suivre</h2>
+      </div>
+      <div class="card-description">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas cum earum quis autem odio voluptate nisi. Nisi odit, quos inventore eveniet tenetur blanditiis, possimus dolores perspiciatis error quis quia?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta quidem tempora quis explicabo eos eum, corrupti perspiciatis est esse suscipit aspernatur facilis voluptatibus id, doloribus autem optio aut cumque.</p>
+      </div>
+    </div>
+  </div>
 </div>
