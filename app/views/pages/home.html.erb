@@ -1,23 +1,24 @@
 <div class="navbar">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "logo_trans.png" %>
+  <%# <h1 class="nav-title">La Véloterie</h1> %>
+  <%= link_to "association", class: "navbar-brand" do %>
+    <%= image_tag "baniere.png" %>
   <% end %>
-  <h1 class="nav-title">La Véloterie du Grand Cahors</h1>
-  <%= link_to "Contact", "#", class: "nav-link" %>
+  <%= link_to "Contact", "#contact", class: "nav-link" %>
 </div>
 <div class="container">
   <div class="velo-navigation">
-    <p>-------------------------------------------------------------------------
-    -------------------------------------------------------------------------------</p>
   </div>
-  <div class="presentation-card" data-aos="fade-up-right" data-aos-duration="500">
+  <div class="presentation-card" data-aos="fade-up-right" data-aos-duration="800">
     <div class="card-title">
       <%= image_tag "outils_cercle.png", class: "card-img-round" %>
       <h2>L'Association</h2>
     </div>
     <div class="card-description">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas cum earum quis autem odio voluptate nisi. Nisi odit, quos inventore eveniet tenetur blanditiis, possimus dolores perspiciatis error quis quia?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta quidem tempora quis explicabo eos eum, corrupti perspiciatis est esse suscipit aspernatur facilis voluptatibus id, doloribus autem optio aut cumque.</p>
+    <p class="mt-2"> Créée début 2022, l'association <strong>La Véloterie</strong> a pour projet de
+    monter un atelier vélo participatif dans <strong>l'agglomération du Grand Cahors</strong> dans le Lot.</p>
+    <p> Ce lieu s'inscrit dans une <strong>multiplicité d'activités autour du vélo</strong>,
+    de son auto-réparation, de sa revalorisation et de la promotion de son utilisation. De plus, La Véloterie
+    se veut être un lieu fédérateur, inclusif, pédagogique et écologique <strong>accessible à tous•tes</Strong>.</p>
     </div>
   </div>
 
@@ -28,14 +29,44 @@
   </div>
 
   <div class="card-right">
-    <div class="presentation-card" data-aos="fade-up-left" data-aos-duration="500">
+    <div class="presentation-card" data-aos="fade-up-left" data-aos-duration="800">
       <div class="card-title">
         <%= image_tag "outils_cercle.png", class: "card-img-round" %>
         <h2>Nos activités</h2>
       </div>
       <div class="card-description">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas cum earum quis autem odio voluptate nisi. Nisi odit, quos inventore eveniet tenetur blanditiis, possimus dolores perspiciatis error quis quia?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta quidem tempora quis explicabo eos eum, corrupti perspiciatis est esse suscipit aspernatur facilis voluptatibus id, doloribus autem optio aut cumque.</p>
+        <ul>
+          <li>
+            <p class="mt-2"><strong>Apprendre la mécanique</strong> grâce à l'accès à un atelier vélo participatif. Les
+            adhérent•es ont accès aux pièces détachées et aux conseils des bénévoles pour
+            réparer leur propre vélo et devenir à terme autonome.</p>
+          </li>
+          <li>
+            <p><strong>Acquérir un vélo d'occasion</strong> pour les adhérent•es. L'atelier
+            met en vente des vélos "prêts à rouler" (remis en état par un•e bénévole) ou
+            "à retaper" pour pouvoir s'exercer tout en étant accompagné•e dans la réparation.</p>
+          </li>
+          <li>
+            <p><strong>Participer à un atelier mobile</strong> à l'échelle du Grand Cahors.
+            Grâce à un vélo-cargo les animateur•ices d'ateliers pourront venir à votre rencontre
+            dans les écoles mais aussi au sein de votre entreprise ou de votre administration pour
+            des ateliers de réparation et de sensibilisation autour du vélo.</p>
+          </li>
+          <li>
+            <p><strong>Apprendre ou ré-apprendre à rouler</strong> grâce à la vélo-école. La Véloterie
+            souhaite permettre aux petit•es comme aux grand•es d'accéder à un nouveau mode de
+            déplacement et d'ainsi prendre confiance en elleux pour rouler dans la ville. Des ateliers
+            dans des écoles primaires auront lieu dès la rentrée 2022.</p>
+          </li>
+          <li>
+            <p><strong>Partir en balade à vélo</strong> avec d'autres cyclistes. De manière ponctuelle sur
+            une journée, ou pour de plus grands trajets, La Véloterie offre un réseau de personnes
+            avec qui pédaler. L'atelier offre également un espace dédié au voyage à vélo, avec cartes,
+            itinéraires et conseils pour ses paquetages.</p>
+          </li>
+        </ul>
+        <p>Pour connaitre l'ensemble des évenements organisés et être tenu•e au courant des actualités de
+        La Véloterie consultez notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link" %>.</p>
       </div>
     </div>
   </div>
@@ -46,7 +77,7 @@
     <%= image_tag "photos/serre-boulon.jpg"%>
   </div>
 
-  <div class="presentation-card" data-aos="fade-up-right" data-aos-duration="500">
+  <div class="presentation-card" data-aos="fade-up-right" data-aos-duration="800">
     <div class="card-title">
       <%= image_tag "outils_cercle.png", class: "card-img-round" %>
       <h2>Nos valeurs</h2>
@@ -63,8 +94,9 @@
     <%= image_tag "photos/balade.jpg"%>
   </div>
 
+  <a name="contact"></a>
   <div class="card-right">
-    <div class="presentation-card" data-aos="fade-up-left" data-aos-duration="500">
+    <div class="presentation-card" data-aos="fade-up-left" data-aos-duration="800">
       <div class="card-title">
         <%= image_tag "outils_cercle.png", class: "card-img-round" %>
         <h2>Nous rejoindre et nous suivre</h2>

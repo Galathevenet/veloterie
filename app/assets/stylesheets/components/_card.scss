@@ -29,6 +29,14 @@
       margin-right: 12px;
     }
   }
+
+  .card-link {
+    color: black;
+    font-weight: bold;
+      &:hover {
+        color: #FF6900;
+      }
+  }
 }
 
 .card-right {
