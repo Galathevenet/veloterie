@@ -3,7 +3,7 @@
   <%= link_to "association", class: "navbar-brand" do %>
     <%= image_tag "baniere.png" %>
   <% end %>
-  <%= link_to "Contact", "#contact", class: "nav-link" %>
+  <%= link_to "Adhérer", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link" %>
 </div>
 <div class="container">
   <div class="velo-navigation">
@@ -83,8 +83,33 @@
       <h2>Nos valeurs</h2>
     </div>
     <div class="card-description">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas cum earum quis autem odio voluptate nisi. Nisi odit, quos inventore eveniet tenetur blanditiis, possimus dolores perspiciatis error quis quia?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta quidem tempora quis explicabo eos eum, corrupti perspiciatis est esse suscipit aspernatur facilis voluptatibus id, doloribus autem optio aut cumque.</p>
+      <ul>
+        <li>
+          <p class="mt-2"><strong>Partager et fédérer</strong>. La Véloterie désire être un espace
+          de création de lien social. Partager du temps, des connaissances ou encore un café
+          entre participant•es est un des objectifs principaux de l'association. L'atelier est un lieu
+          d'accueil pour les personnes de passage mais aussi pour les habitant•es de l'agglomération. Cela
+          leur permet de se rencontrer, de se découvrir au delà du vélo, et de s'organiser collectivement
+          autour de thèmes communs. La Véloterie a également à coeur de porter la voix des cyclistes auprès
+          des pouvoirs publics et d'ainsi créer le lien entre décideur•ses et utilisateur•ices.</p>
+        </li>
+        <li>
+          <p><strong>Inclure et rendre accessible</strong>. La véloterie est un projet collectif ouvert à
+          tous•tes. Elle pratique des prix libres pour son adhésion ainsi que pour les pièces détachées de
+          l'atelier. Les adhérent•es peuvent ainsi réparer leur vélo à moindre coût mais aussi s'en procurer
+          un à petit prix grâce au stock de l'association. La charte établie des régles d'équité entre tous•tes.
+          La Véloterie souhaite également développer le cycloféminisme avec notamment des ateliers et évenements en mixité
+          choisie.</p>
+        </li>
+        <li>
+          <p><strong>Revaloriser et recycler</strong>. Le coeur du fonctionnement de la Véloterie repose sur la
+          revalorisation et la réutilisation de pièces détachées de vélos abandonnés ou inutilisés. Cela donne accès à
+          des pièces parfois disparues dans le commerce et de diminuer le coût de traitement de ces matériaux pour
+          les collectivités. L'association a notamment développé un partenariat avec Emmaüs Cahors : en échange d'aide
+          mécanique, la Véloterie a accès au gisement de vélos d'Emmaüs. Enfin, ce fonctionnement permet la transmission de
+          gestes éco-citoyens aux adhérent•es comme le recyclage, la réparation ou le détournement pour ne pas jeter.</p>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -102,11 +127,33 @@
         <h2>Nous rejoindre et nous suivre</h2>
       </div>
       <div class="card-description">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas cum earum quis autem odio voluptate nisi. Nisi odit, quos inventore eveniet tenetur blanditiis, possimus dolores perspiciatis error quis quia?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta quidem tempora quis explicabo eos eum, corrupti perspiciatis est esse suscipit aspernatur facilis voluptatibus id, doloribus autem optio aut cumque.</p>
+      <p class="mt-2">Adhérer à La Véloterie permet de nous soutenir <strong>financièrement mais aussi politiquement</strong>.
+      Plus nous serons nombreux•ses, plus notre voix aura de poids auprès des pouvoirs publics.</p>
+      <ul>
+        <li>
+          <p>L'adhésion se fait à prix libre sur HelloAsso : <%= link_to "adhérez en cliquant ici", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class:"card-link" %>.</p>
+        </li>
+        <li>
+          <p>Pour donner son vélo inutilisé ou pour toute autre demande vous pouvez contacter : <strong>Gabriel - 07 83 27 36 36</strong>.</p>
+        </li>
+        <li>
+          <p>Pour suivre nos actualités RDV sur notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link" %> ou grâce à nos flyers dans la ville.</p>
+        </li>
+        <li>
+          <p>Vous pouvez également nous écrire à l'addresse suivante : <%= mail_to "laveloterie46@gmail.com", "laveloterie46@gmail.com", class: "card-link" %>.</p>
+        </li>
+      </ul>
       </div>
     </div>
   </div>
+</div>
+<div class="footer">
+    <%= image_tag "partenaires/Agglomeration.jpg"%>
+    <%= image_tag "partenaires/fub.jpg"%>
+    <%= image_tag "partenaires/mjc.jpg"%>
+    <%= image_tag "partenaires/Emmaus.jpg"%>
+    <%= image_tag "partenaires/MACIF.png"%>
+    <%= image_tag "partenaires/heureuxcyclage.png"%>
 </div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
