@@ -1,5 +1,4 @@
-meta_product_name: "Product Name"
-meta_title: "Product name - Product tagline"
-meta_description: "Relevant description"
-meta_image: "cover.png" # should exist in `app/assets/images/`
-twitter_account: "@product_twitter_account"   # required for Twitter Cards
+meta_product_name: "La Véloterie"
+meta_title: "La Véloterie - Atelier vélo participatif du Grand Cahors"
+meta_description: "La Véloterie  est un atelier vélo participatif basé sur l'agglomération du Grand Cahors dans le Lot. L'atelier propose aux adhérent·es des outils, des pièces détachés et des conseils pour apprendre à réparer soi même son vélo."
+meta_image: "logo_couleur.png" # should exist in `app/assets/images/`
