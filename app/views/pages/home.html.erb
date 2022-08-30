@@ -3,7 +3,7 @@
   <%= link_to "association", class: "navbar-brand" do %>
     <%= image_tag "baniere.png" %>
   <% end %>
-  <%= link_to "Adhérer", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link" %>
+  <%= link_to "Adhérer", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link", target: :_blank %>
 </div>
 <div class="container">
   <div class="velo-navigation">
@@ -14,11 +14,18 @@
       <h2>L'Association</h2>
     </div>
     <div class="card-description">
-    <p class="mt-2"> Créée début 2022, l'association <strong>La Véloterie</strong> a pour projet de
-    monter un atelier vélo participatif dans <strong>l'agglomération du Grand Cahors</strong> dans le Lot.</p>
-    <p> Ce lieu s'inscrit dans une <strong>multiplicité d'activités autour du vélo</strong>,
-    de son auto-réparation, de sa revalorisation et de la promotion de son utilisation. De plus, La Véloterie
-    se veut être un lieu fédérateur, inclusif, pédagogique et écologique <strong>accessible à tous•tes</Strong>.</p>
+    <p class="mt-2"> <strong>La Véloterie</strong> est un <strong>atelier vélo participatif</strong> basé sur
+    l'agglomération du Grand Cahors dans le Lot. L'atelier propose aux
+    adhérent•es des <strong>outils</strong>, des <strong>pièces détachées</strong>
+    et des <strong>conseils</strong> pour apprendre à réparer soi-même son vélo.</p>
+    <p> Mais ce n'est pas tout ! La Véloterie se veut être un lieu fédérateur,
+    inclusif, pédagogique et écologique <strong>accessible à tous•tes</Strong>
+    pour valoriser le vélo et son usage.</p>
+    <p>La Véloterie n'a pas encore de local permanent mais on y travaille !</p>
+    <p>En attendant, pour connaitre l'ensemble des évènements organisés par La
+    Véloterie consultez notre super calendrier ou notre page
+    <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %> !</p>
+    <p>Vous pouvez également vous abonner à notre lettre d'infos en cliquant ici.</p>
     </div>
   </div>
 
@@ -66,7 +73,7 @@
           </li>
         </ul>
         <p>Pour connaitre l'ensemble des évenements organisés et être tenu•e au courant des actualités de
-        La Véloterie consultez notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link" %>.</p>
+        La Véloterie consultez notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %>.</p>
       </div>
     </div>
   </div>
@@ -131,13 +138,13 @@
       Plus nous serons nombreux•ses, plus notre voix aura de poids auprès des pouvoirs publics.</p>
       <ul>
         <li>
-          <p>L'adhésion se fait à prix libre sur HelloAsso : <%= link_to "adhérez en cliquant ici", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class:"card-link" %>.</p>
+          <p>L'adhésion se fait à prix libre sur HelloAsso : <%= link_to "adhérez en cliquant ici", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class:"card-link", target: :_blank %>.</p>
         </li>
         <li>
           <p>Pour donner son vélo inutilisé ou pour toute autre demande vous pouvez contacter : <strong>Gabriel - 07 83 27 36 36</strong>.</p>
         </li>
         <li>
-          <p>Pour suivre nos actualités RDV sur notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link" %> ou grâce à nos flyers dans la ville.</p>
+          <p>Pour suivre nos actualités RDV sur notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %> ou grâce à nos flyers dans la ville.</p>
         </li>
         <li>
           <p>Vous pouvez également nous écrire à l'addresse suivante : <%= mail_to "laveloterie46@gmail.com", "laveloterie46@gmail.com", class: "card-link" %>.</p>
