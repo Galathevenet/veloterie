@@ -1,9 +1,12 @@
 <div class="navbar">
-  <%# <h1 class="nav-title">La Véloterie</h1> %>
   <%= link_to "association", class: "navbar-brand" do %>
     <%= image_tag "baniere.png" %>
   <% end %>
-  <%= link_to "Adhérer", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link", target: :_blank %>
+  <h1 class="nav-title">La Véloterie</h1>
+  <div>
+    <%= link_to "Réparer son vélo", "#calendar", class: "nav-link"%>
+    <%= link_to "Adhérer à l'asso", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link mt-2", target: :_blank %>
+  </div>
 </div>
 <div class="container">
   <div class="velo-navigation">
@@ -117,7 +120,6 @@
     <%= image_tag "photos/balade.jpg"%>
   </div>
 
-  <a name="contact"></a>
   <div class="card-right">
     <div class="presentation-card" data-aos="fade-up-left" data-aos-duration="800">
       <div class="card-title">
@@ -144,6 +146,8 @@
       </div>
     </div>
   </div>
+
+  <a name="calendar"></a>
   <div class="presentation-card">
     <div class="card-title">
       <%= image_tag "outils_cercle.png", class: "card-img-round" %>
