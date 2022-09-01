@@ -14,18 +14,18 @@
       <h2>L'Association</h2>
     </div>
     <div class="card-description">
-    <p class="mt-2"> <strong>La Véloterie</strong> est un <strong>atelier vélo participatif</strong> basé sur
-    l'agglomération du Grand Cahors dans le Lot. L'atelier propose aux
-    adhérent•es des <strong>outils</strong>, des <strong>pièces détachées</strong>
-    et des <strong>conseils</strong> pour apprendre à réparer soi-même son vélo.</p>
-    <p> Mais ce n'est pas tout ! La Véloterie se veut être un lieu fédérateur,
-    inclusif, pédagogique et écologique <strong>accessible à tous•tes</Strong>
-    pour valoriser le vélo et son usage.</p>
-    <p>La Véloterie n'a pas encore de local permanent mais on y travaille !</p>
-    <p>En attendant, pour connaitre l'ensemble des évènements organisés par La
-    Véloterie consultez notre super calendrier ou notre page
-    <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %> !</p>
-    <p>Vous pouvez également vous abonner à notre lettre d'infos en cliquant ici.</p>
+      <p class="mt-2"> <strong>La Véloterie</strong> est un <strong>atelier vélo participatif</strong> basé sur
+      l'agglomération du Grand Cahors dans le Lot. L'atelier propose aux
+      adhérent•es des <strong>outils</strong>, des <strong>pièces détachées</strong>
+      et des <strong>conseils</strong> pour apprendre à réparer soi-même son vélo.</p>
+      <p> Mais ce n'est pas tout ! La Véloterie se veut être un lieu fédérateur,
+      inclusif, pédagogique et écologique <strong>accessible à tous•tes</Strong>
+      pour valoriser le vélo et son usage.</p>
+      <p>La Véloterie n'a pas encore de local permanent mais on y travaille !</p>
+      <p>En attendant, pour connaitre l'ensemble des évènements organisés par La
+      Véloterie consultez notre super calendrier ou notre page
+      <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %> !</p>
+      <p>Vous pouvez également vous abonner à notre lettre d'infos en cliquant ici.</p>
     </div>
   </div>
 
@@ -44,12 +44,14 @@
       <div class="card-description">
         <ul>
           <li>
-            <p class="mt-2"><strong>Apprendre la mécanique</strong> grâce à l'accès à un atelier vélo participatif. Les
-            adhérent•es ont accès aux pièces détachées et aux conseils des bénévoles pour
-            réparer leur propre vélo et devenir à terme autonome.</p>
+            <p class="mt-2"><strong>Apprendre la mécanique</strong> lors de nos
+            permanences d'auto-réparation ou lors des sessions démontage.
+            Les conseils des bénévoles mécano·es et les documents pédagogiques
+            vous accompagneront dans l'apprentissage ! Pas de besoins d'être
+            un·e pro pour venir !</p>
           </li>
           <li>
-            <p><strong>Acquérir un vélo d'occasion</strong> pour les adhérent•es. L'atelier
+            <p color="#FF6900"><strong>Acquérir un vélo d'occasion</strong> pour les adhérent•es. L'atelier
             met en vente des vélos "prêts à rouler" (remis en état par un•e bénévole) ou
             "à retaper" pour pouvoir s'exercer tout en étant accompagné•e dans la réparation.</p>
           </li>
@@ -153,6 +155,9 @@
       </div>
     </div>
   </div>
+  <div class="trans-cal">
+    <div class="smgc-calendar-placeholder" id="smgc-cal-dzevoqwSEIr06FreivU8"></div>
+  </div>
 </div>
 <div class="footer">
     <%= image_tag "partenaires/Agglomeration.jpg"%>
@@ -163,6 +168,7 @@
     <%= image_tag "partenaires/heureuxcyclage.png"%>
 </div>
 
+<script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();

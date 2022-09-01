@@ -27,8 +27,8 @@
       width: 50px;
       border-radius: 50%;
       margin-right: 12px;
+      }
     }
-  }
 
   .card-link {
     color: black;
@@ -46,4 +46,8 @@
   .presentation-card {
     box-shadow: -4px 4px 9px #cecdcd;
   }
+}
+
+.trans-cal {
+  opacity: 0.9;
 }
