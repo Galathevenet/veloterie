@@ -2,7 +2,7 @@
   <%= link_to "association", class: "navbar-brand" do %>
     <%= image_tag "baniere.png" %>
   <% end %>
-  <h1 class="nav-title">La Véloterie</h1>
+  <h1 class="nav-title">La Véloterie du Grand Cahors</h1>
   <div>
     <%= link_to "Réparer son vélo", "#calendar", class: "nav-link"%>
     <%= link_to "Adhérer à l'asso", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link mt-2", target: :_blank %>
@@ -35,15 +35,15 @@
   <div class="photos-container">
     <div class="pic-container">
       <%= image_tag "photos/pancartes.jpg"%>
-      <div class="text-hover">Atelier mobile en préparation</div>
+      <p class="text-hover">Atelier mobile en préparation</p>
     </div>
     <div class="pic-container">
       <%= image_tag "photos/assemblee.jpg"%>
-      <div class="text-hover">Atelier mobile en préparation</div>
+      <p class="text-hover">1ère réunion du comité d'administration</p>
     </div>
     <div class="pic-container">
       <%= image_tag "photos/valeurs-regles.jpg"%>
-      <div class="text-hover">Atelier mobile en préparation</div>
+      <p class="text-hover">Rédaction de la charte de l'atelier</p>
     </div>
   </div>
 
@@ -63,7 +63,7 @@
             un·e pro pour venir !</p>
           </li>
           <li>
-            <p color="#FF6900"><strong>Acquérir un vélo d'occasion</strong> pour les adhérent•es. L'atelier
+            <p><strong>Acquérir un vélo d'occasion</strong> pour les adhérent•es. L'atelier
             met en vente des vélos "prêts à rouler" (remis en état par un•e bénévole) ou
             "à retaper" pour pouvoir s'exercer tout en étant accompagné•e dans la réparation.</p>
           </li>
@@ -86,9 +86,18 @@
   </div>
 
   <div class="photos-container">
-    <%= image_tag "photos/mains-velo.jpg"%>
-    <%= image_tag "photos/outillage.jpg"%>
-    <%= image_tag "photos/serre-boulon.jpg"%>
+    <div class="pic-container">
+      <%= image_tag "photos/mains-velo.jpg"%>
+      <p class="text-hover">Collaboration de haut vol</p>
+    </div>
+    <div class="pic-container">
+      <%= image_tag "photos/outillage.jpg"%>
+      <p class="text-hover">Organisation de la visserie</p>
+    </div>
+    <div class="pic-container">
+      <%= image_tag "photos/arc_de_diane.jpg"%>
+      <p class="text-hover">Permanence mécanique à l'Arc de Diane</p>
+    </div>
   </div>
 
   <div class="presentation-card" data-aos="fade-up-right" data-aos-duration="800">
@@ -124,9 +133,18 @@
   </div>
 
   <div class="photos-container">
-    <%= image_tag "photos/depart-balade.jpg"%>
-    <%= image_tag "photos/enfants.jpg"%>
-    <%= image_tag "photos/balade.jpg"%>
+    <div class="pic-container">
+      <%= image_tag "photos/depart-balade.jpg"%>
+      <p class="text-hover">100 cyclistes réuni•es pour la Vélorution du mois de Mai</p>
+    </div>
+    <div class="pic-container">
+      <%= image_tag "photos/enfants.jpg"%>
+      <p class="text-hover">La mécanique pour tous•tes !</p>
+    </div>
+    <div class="pic-container">
+      <%= image_tag "photos/balade.jpg"%>
+      <p class="text-hover">Manifestation cycliste dans Cahors</p>
+    </div>
   </div>
 
   <div class="card-right">
