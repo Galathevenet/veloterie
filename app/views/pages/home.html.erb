@@ -146,48 +146,67 @@
     </div>
   </div>
 
+  <a name="calendar"></a>
   <div class="card-right">
     <div class="presentation-card" data-aos="fade-up-left" data-aos-duration="800">
       <div class="card-title">
         <%= image_tag "outils_cercle.png", class: "card-img-round" %>
-        <h2>Nous rejoindre et nous suivre</h2>
+        <h2>Nos événements</h2>
       </div>
-      <div class="card-description">
-      <p class="mt-2">Adhérer à La Véloterie permet de nous soutenir <strong>financièrement mais aussi politiquement</strong>.
-      Plus nous serons nombreux•ses, plus notre voix aura de poids auprès des pouvoirs publics.</p>
-      <ul>
-        <li>
-          <p>L'adhésion se fait à prix libre sur HelloAsso : <%= link_to "adhérez en cliquant ici", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class:"card-link", target: :_blank %>.</p>
-        </li>
-        <li>
-          <p>Pour donner son vélo inutilisé ou pour toute autre demande vous pouvez contacter : <strong>Gabriel - 07 83 27 36 36</strong>.</p>
-        </li>
-        <li>
-          <p>Pour suivre nos actualités RDV sur notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %> ou grâce à nos flyers dans la ville.</p>
-        </li>
-        <li>
-          <p>Vous pouvez également nous écrire à l'addresse suivante : <%= mail_to "laveloterie46@gmail.com", "laveloterie46@gmail.com", class: "card-link" %>.</p>
-        </li>
-      </ul>
+      <div class="card-calendar">
+        <%# <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23F09300&ctz=Europe%2FParis&showPrint=0&showTz=0&showCalendars=0&showTabs=0&showTitle=0&showNav=1&showDate=1&src=Z2FsYS50aGV2ZW5ldEBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23cc5400&color=%2333B679&color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> %>
+        <div class="smgc-calendar-placeholder" id="smgc-cal-dzevoqwSEIr06FreivU8"></div>
       </div>
     </div>
   </div>
 
-  <a name="calendar"></a>
+<div class="photos-container">
+    <div class="pic-container">
+      <%= image_tag "photos/depart-balade.jpg"%>
+      <p class="text-hover">100 cyclistes réuni•es pour la Vélorution du mois de Mai</p>
+    </div>
+    <div class="pic-container">
+      <%= image_tag "photos/enfants.jpg"%>
+      <p class="text-hover">La mécanique pour tous•tes !</p>
+    </div>
+    <div class="pic-container">
+      <%= image_tag "photos/balade.jpg"%>
+      <p class="text-hover">Manifestation cycliste dans Cahors</p>
+    </div>
+  </div>
+
   <div class="presentation-card" data-aos="fade-up-right" data-aos-duration="800">
     <div class="card-title">
       <%= image_tag "outils_cercle.png", class: "card-img-round" %>
-      <h2>Nos événements</h2>
+      <h2>Nous rejoindre et nous suivre</h2>
     </div>
-    <div class="card-calendar">
-      <%# <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23F09300&ctz=Europe%2FParis&showPrint=0&showTz=0&showCalendars=0&showTabs=0&showTitle=0&showNav=1&showDate=1&src=Z2FsYS50aGV2ZW5ldEBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23cc5400&color=%2333B679&color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> %>
-      <div class="smgc-calendar-placeholder" id="smgc-cal-dzevoqwSEIr06FreivU8"></div>
+    <div class="card-description">
+    <p class="mt-2"><strong>Adhérer à La Véloterie</strong> permet de nous soutenir financièrement mais aussi politiquement.
+    Plus nous serons nombreux•ses, plus notre voix aura de poids auprès des pouvoirs publics.</p>
+    <ul>
+      <li>
+        <p>L'adhésion se fait à prix libre sur HelloAsso : <%= link_to "adhérez en cliquant ici", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class:"card-link", target: :_blank %>.</p>
+      </li>
+      <li>
+        <p>Pour donner son vélo inutilisé ou pour toute autre demande vous pouvez contacter : <strong>Gabriel - 07 83 27 36 36</strong>.</p>
+      </li>
+      <li>
+        <p>Pour suivre nos actualités RDV sur notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %> ou grâce à nos flyers dans la ville.</p>
+      </li>
+      <li>
+        <p>Vous pouvez également nous écrire à l'addresse suivante : <%= mail_to "laveloterie46@gmail.com", "laveloterie46@gmail.com", class: "card-link" %>.</p>
+      </li>
+    </ul>
     </div>
   </div>
 </div>
+
 <div class="footer">
   <%= link_to 'https://cahorsagglo.fr/', target: :_blank do %>
     <%= image_tag "partenaires/Agglomeration.jpg"%>
+  <% end %>
+  <%= link_to 'https://syded-lot.fr/', target: :_blank do %>
+    <%= image_tag "partenaires/syded-lot.jpg"%>
   <% end %>
   <%= link_to 'https://www.fub.fr/', target: :_blank do %>
     <%= image_tag "partenaires/fub.jpg"%>
@@ -199,7 +218,7 @@
     <%= image_tag "partenaires/Emmaus.jpg"%>
   <% end %>
   <%= link_to 'https://www.fondation-macif.org/', target: :_blank do %>
-    <%= image_tag "partenaires/MACIF.png"%>
+    <%= image_tag "partenaires/macif-fondation.jpg"%>
   <% end %>
   <%= link_to 'https://www.heureux-cyclage.org/', target: :_blank do %>
     <%= image_tag "partenaires/heureuxcyclage.png"%>
