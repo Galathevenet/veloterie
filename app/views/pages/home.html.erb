@@ -1,7 +1,7 @@
 <div class="navbar">
   <%# <h1 class="nav-title">La Véloterie du Grand Cahors</h1> %>
   <%= link_to "Adhérer sur HelloAsso", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link margin-left", target: :_blank %>
-  <%= link_to "association", class: "navbar-brand" do %>
+  <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "banniere-grand.png" %>
   <% end %>
   <div>
@@ -154,7 +154,7 @@
         <h2>Nos événements</h2>
       </div>
       <div class="card-description">
-      <p class="mt-2">Jetez un œil sur notre calendrier pour connaitre nos prochaines actions !</p>
+        <p class="mt-2">Jetez un œil sur notre calendrier pour connaitre nos prochaines actions !</p>
       </div>
       <div class="card-calendar">
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ff6900&ctz=Europe%2FParis&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZnA1bGFwdG5qN212MGhna2VqMmU5N2xqNGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%237986CB" style="border:solid 1px #777" width="950" height="600" frameborder="0" scrolling="no"></iframe>
@@ -168,8 +168,8 @@
       <p class="text-hover">100 cyclistes réuni•es pour la Vélorution du mois de Mai</p>
     </div>
     <div class="pic-container">
-      <%= image_tag "photos/enfants.jpg"%>
-      <p class="text-hover">La mécanique pour tous•tes !</p>
+      <%= image_tag "carte-zoom.png"%>
+      <p class="text-hover">24 Avenue Charles de Freycinet</p>
     </div>
     <div class="pic-container">
       <%= image_tag "photos/balade.jpg"%>
