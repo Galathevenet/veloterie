@@ -1,11 +1,11 @@
 <div class="navbar">
+  <%# <h1 class="nav-title">La Véloterie du Grand Cahors</h1> %>
+  <%= link_to "Adhérer sur HelloAsso", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link margin-left", target: :_blank %>
   <%= link_to "association", class: "navbar-brand" do %>
-    <%= image_tag "baniere.png" %>
+    <%= image_tag "banniere-grand.png" %>
   <% end %>
-  <h1 class="nav-title">La Véloterie du Grand Cahors</h1>
   <div>
-    <%= link_to "Réparer son vélo", "#calendar", class: "nav-link"%>
-    <%= link_to "Adhérer sur HelloAsso", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class: "nav-link mt-2", target: :_blank %>
+    <%= link_to "Réparer son vélo", "#calendar", class: "nav-link margin-right"%>
   </div>
 </div>
 <div class="container">
@@ -87,7 +87,7 @@
   <div class="photos-container">
     <div class="pic-container">
       <%= image_tag "photos/mains-velo.jpg"%>
-      <p class="text-hover">Collaboration de haut vol</p>
+      <p class="text-hover">Réparation à quatre mains</p>
     </div>
     <div class="pic-container">
       <%= image_tag "photos/outillage.jpg"%>
@@ -153,9 +153,11 @@
         <%= image_tag "outils_cercle.png", class: "card-img-round" %>
         <h2>Nos événements</h2>
       </div>
+      <div class="card-description">
+      <p class="mt-2">Jetez un œil sur notre calendrier pour connaitre nos prochaines actions !</p>
+      </div>
       <div class="card-calendar">
-        <%# <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23F09300&ctz=Europe%2FParis&showPrint=0&showTz=0&showCalendars=0&showTabs=0&showTitle=0&showNav=1&showDate=1&src=Z2FsYS50aGV2ZW5ldEBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23cc5400&color=%2333B679&color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> %>
-        <div class="smgc-calendar-placeholder" id="smgc-cal-dzevoqwSEIr06FreivU8"></div>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ff6900&ctz=Europe%2FParis&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZnA1bGFwdG5qN212MGhna2VqMmU5N2xqNGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%237986CB" style="border:solid 1px #777" width="950" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
   </div>
@@ -181,22 +183,22 @@
       <h2>Nous rejoindre et nous suivre</h2>
     </div>
     <div class="card-description">
-    <p class="mt-2"><strong>Adhérer à La Véloterie</strong> permet de nous soutenir financièrement mais aussi politiquement.
-    Plus nous serons nombreux•ses, plus notre voix aura de poids auprès des pouvoirs publics.</p>
-    <ul>
-      <li>
-        <p>L'adhésion se fait à prix libre sur HelloAsso : <%= link_to "adhérez en cliquant ici", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class:"card-link", target: :_blank %>.</p>
-      </li>
-      <li>
-        <p>Pour donner son vélo inutilisé ou pour toute autre demande vous pouvez contacter : <strong>Gabriel - 07 83 27 36 36</strong>.</p>
-      </li>
-      <li>
-        <p>Pour suivre nos actualités RDV sur notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %> ou grâce à nos flyers dans la ville.</p>
-      </li>
-      <li>
-        <p>Vous pouvez également nous écrire à l'addresse suivante : <%= mail_to "laveloterie46@gmail.com", "laveloterie46@gmail.com", class: "card-link" %>.</p>
-      </li>
-    </ul>
+      <p class="mt-2">Adhérer à La Véloterie permet de nous soutenir financièrement mais aussi politiquement.
+      Plus nous serons nombreux•ses, plus notre voix aura de poids auprès des pouvoirs publics.</p>
+      <ul>
+        <li>
+          <p>L'adhésion se fait à prix libre sur HelloAsso : <%= link_to "adhérez en cliquant ici", "https://www.helloasso.com/associations/la-veloterie/adhesions/adhesion-annuel", class:"card-link", target: :_blank %>.</p>
+        </li>
+        <li>
+          <p>Pour donner son vélo inutilisé ou pour toute autre demande vous pouvez contacter : <strong>Gabriel - 07 83 27 36 36</strong>.</p>
+        </li>
+        <li>
+          <p>Pour suivre nos actualités RDV sur notre page <%= link_to "Facebook", "https://www.facebook.com/La.Veloterie.Cahors", class: "card-link", target: :_blank %> ou grâce à nos flyers dans la ville.</p>
+        </li>
+        <li>
+          <p>Vous pouvez également nous écrire à l'addresse suivante : <%= mail_to "laveloterie46@gmail.com", "laveloterie46@gmail.com", class: "card-link" %>.</p>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

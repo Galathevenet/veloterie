@@ -53,4 +53,11 @@
   width: 100%;
   margin-top: 15px;
   opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-description {
+  text-align: left;
 }
